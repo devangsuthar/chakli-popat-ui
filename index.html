@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chakli Popat Game</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="site-wrapper">
+        <div class="container container-sm">
+            <div class="header-top">
+                <div class="row justify-space-between top-box br-5 gy-2 theme-bg p-2 py-3 my-3">
+                    <div class="col-4 m-0">
+                        <div class="field-label text-center br-5 p-1 pt-2">
+                            <h5>Last Game ID</h5>
+                            <span>45321</span>
+                        </div>
+                        <div class="field-label text-center bg-secondary my-2 text-white br-5 p-1 pt-2">
+                            <h5>Play Amount</h5>
+                            <span>12</span>
+                        </div>
+                        <div class="field-label text-center bg-warning br-5 p-1 pt-2">
+                            <h5>Win Amount</h5>
+                            <span>0</span>
+                        </div>
+                    </div>
+                    <div class="col-4 m-0">
+                        <div id="revese-timer" data-minute="1"></div>
+                    </div>  
+                    <div class="col-4 m-0">
+                        <div class="image-box">
+                            <div class="image-field">
+                                <img src="./images/ball.png">
+                            </div>
+                            <h5 class="title mt-2">ball</h5>
+                            <button class="btn custom-btn mt-2">Last Result</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 bet-section br-5 p-2 pb-4 theme-bg g-3 my-3">
+                    <div class="col">
+                        <div class="image-box">
+                            <div class="image-field">
+                                <img src="./images/umbrella.png">
+                            </div>
+                            <h5 class="title mt-2">umbrella</h5>
+                            <div class="bet-field">
+                                <label>Bet</label>
+                                <input class="input-field" id="amount" placeholder="Amount" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="image-box">
+                            <div class="image-field">
+                                <img src="./images/cow.png">
+                            </div>
+                            <h5 class="title mt-2">vow</h5>
+                            <div class="bet-field">
+                                <label>Bet</label>
+                                <input class="input-field" id="amount" placeholder="Amount" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="image-box">
+                            <div class="image-field">
+                                <img src="./images/kite.png">
+                            </div>
+                            <h5 class="title mt-2">kite</h5>
+                            <div class="bet-field">
+                                <label>Bet</label>
+                                <input class="input-field" id="amount" placeholder="Amount" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="image-box">
+                            <div class="image-field">
+                                <img src="./images/diya.png">
+                            </div>
+                            <h5 class="title mt-2">diya</h5>
+                            <div class="bet-field">
+                                <label>Bet</label>
+                                <input class="input-field" id="amount" placeholder="Amount" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="image-box">
+                            <div class="image-field">
+                                <img src="./images/dol-tub.png">
+                            </div>
+                            <h5 class="title mt-2">dol-tub</h5>
+                            <div class="bet-field">
+                                <label>Bet</label>
+                                <input class="input-field" id="amount" placeholder="Amount" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="image-box">
+                            <div class="image-field">
+                                <img src="./images/sun.png">
+                            </div>
+                            <h5 class="title mt-2">sun</h5>
+                            <div class="bet-field">
+                                <label>Bet</label>
+                                <input class="input-field" id="amount" placeholder="Amount" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="image-box">
+                            <div class="image-field">
+                                <img src="./images/rabbit.png">
+                            </div>
+                            <h5 class="title mt-2">rabbit</h5>
+                            <div class="bet-field">
+                                <label>Bet</label>
+                                <input class="input-field" id="amount" placeholder="Amount" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="image-box">
+                            <div class="image-field">
+                                <img src="./images/rose.png">
+                            </div>
+                            <h5 class="title mt-2">rose</h5>
+                            <div class="bet-field">
+                                <label>Bet</label>
+                                <input class="input-field" id="amount" placeholder="Amount" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="image-box">
+                            <div class="image-field">
+                                <img src="./images/sparrow.png">
+                            </div>
+                            <h5 class="title mt-2">sparrow</h5>
+                            <div class="bet-field">
+                                <label>Bet</label>
+                                <input class="input-field" id="amount" placeholder="Amount" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="image-box">
+                            <div class="image-field">
+                                <img src="./images/titli.png">
+                            </div>
+                            <h5 class="title mt-2">titli</h5>
+                            <div class="bet-field">
+                                <label>Bet</label>
+                                <input class="input-field" id="amount" placeholder="Amount" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="image-box">
+                            <div class="image-field">
+                                <img src="./images/top-toy.png">
+                            </div>
+                            <h5 class="title mt-2">top-toy</h5>
+                            <div class="bet-field">
+                                <label>Bet</label>
+                                <input class="input-field" id="amount" placeholder="Amount" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="image-box">
+                            <div class="image-field">
+                                <img src="./images/rabbit.png">
+                            </div>
+                            <h5 class="title mt-2">rabbit</h5>
+                            <div class="bet-field">
+                                <label>Bet</label>
+                                <input class="input-field" id="amount" placeholder="Amount" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

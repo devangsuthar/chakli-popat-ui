@@ -1,0 +1,163 @@
+/* Global CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+:root{
+    --theme-color: #21a5a0;
+    --text-color: #495057;
+    --light-bg: #ffffff;
+    --sm-border-radius: 5px;
+    --md-border-radius: 10px;
+    --light-gray: #6c757d;
+    --golden-color: #ffc107;
+
+}
+img{
+    width: 100%;
+}
+.theme-bg{
+    background-color: var(--theme-color);
+}
+.field-label{
+    background-color: var(--light-bg);
+}
+.field-label.theme-bg{
+    background-color: var(--theme-color);
+}
+.site-wrapper{
+    max-width: 540px;
+    margin: 0 auto;
+}
+.br-5{
+    border-radius: var(--sm-border-radius);
+}
+h5,span{
+    font-size: 14px;
+    line-height: 14px;
+}
+
+/* Page CSS */
+
+.top-box h5{
+    margin-bottom: 0;
+}
+.base-timer {
+    position: relative;
+    width: 135px;
+    height: 135px;
+    margin: auto;
+}
+.base-timer__svg {
+    transform: scaleX(-1);
+}
+.base-timer__circle {
+    fill: none;
+    stroke: none;
+}
+.base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: #efefef;
+}
+.base-timer__path-remaining {
+    stroke-width: 7.5px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: currentColor;
+}
+.base-timer__path-remaining.green {
+    color: var(--golden-color);
+}
+.base-timer__path-remaining.orange {
+    color: #ffc107;
+}
+.base-timer__path-remaining.red {
+    color: #db2727;
+}
+.base-timer__label {
+    position: absolute;
+    width: 135px;
+    height: 135px;
+    top: 0;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+.image-box{
+    background-color: var(--light-bg);
+    border-radius: var(--sm-border-radius);
+    padding: 10px;
+}
+.image-box h5{
+    text-transform: capitalize;
+    text-align: center;
+}
+.image-box .image-field{
+    height: 80px;
+    overflow: hidden;
+}
+.image-field img{
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+.btn.custom-btn{
+    background-color: var(--golden-color);
+    display: inline-block;
+    padding: 7px 12px;
+    line-height: normal;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+}
+.btn.custom-btn:focus{
+    box-shadow: none;
+}
+.btn.custom-btn:hover{
+    background-color: var(--theme-color);
+    color: var(--light-bg);
+}
+.bet-section .image-box{
+    padding: 8px 0 0;
+}
+.bet-field label{
+    background-color: var(--text-color);
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+}
+.bet-field input{
+    border: none;
+    width: 100%;
+    background-color: var(--golden-color);
+    color: #000;
+    padding: 8px 5px;
+    font-weight: 600;
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+}
+.bet-field input::placeholder{
+    color: #000;
+    font-weight: 600;
+}
+.bet-field input:focus{
+    border: none;
+    outline: none;
+}
+.site-wrapper .row{
+    margin: 0 auto;
+    width: 100%;
+}
